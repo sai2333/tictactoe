@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>井字棋01版</title>
+</head>
+<script src='js/jquery.js'></script>
+<script src='js/tictactoe01.js'></script>
+<style>
+	.gameBox{
+		position: relative;
+	}
+	.chessboard{
+		width:300px;
+		height: 300px;
+		font-size: 60px;
+		text-align: center;
+		position: absolute;
+		left:40%;
+		top:100px;
+	}
+	.checkerbox{
+		width:90px;
+		height: 90px;
+		float: left;
+		border:solid 2px black;
+		border-right-width: 1px;
+	}
+	.option{
+		position: absolute;
+		left:43%;
+		top:400px;	
+	}
+	button{
+		margin-right: 30px;
+		padding:10px 20px;
+	}
+</style>
+<body>
+	<div class="gameBox">
+		<div class="chessboard">
+			<div class="checkerbox 0"></div>
+			<div class="checkerbox 1"></div>
+			<div class="checkerbox 2"></div>
+			<div class="checkerbox 3"></div>
+			<div class="checkerbox 4"></div>
+			<div class="checkerbox 5"></div>
+			<div class="checkerbox 6"></div>
+			<div class="checkerbox 7"></div>
+			<div class="checkerbox 8"></div>
+		</div>
+		<div class='option'>
+		<h2>请选择您的棋子<h2>
+		<button class="first" value = 'o'>O</button>
+		<button class="last" value = 'x'>X</button>
+		</div>
+	</div>
+</body>
+</html>
